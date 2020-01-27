@@ -3,6 +3,7 @@ import navbar from './navbar.json';
 import searchResults from './searchResults.json';
 import searchFilters from './searchFilters.json';
 import languageSelect from './languageSelect.json';
+import sortBySelect from './sortBySelect.json';
 
 /* eslint-disable key-spacing */
 export default {
@@ -11,4 +12,5 @@ export default {
   searchResults,
   searchFilters,
   languageSelect,
+  sortBySelect,
 };

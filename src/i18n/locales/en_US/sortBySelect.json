@@ -1,0 +1,11 @@
+{
+  "sortBy": {
+    "mostRelevant": "Most relevant",
+    "newestFirst": "Newest first",
+    "oldestFirst": "Oldest first"
+  },
+  "sortOn": "Sort on",
+  "dateOfOriginal": "Date of original",
+  "dateOfPublication": "Date of Publication",
+  "dateOfAddition": "Addition to the trompa"
+}

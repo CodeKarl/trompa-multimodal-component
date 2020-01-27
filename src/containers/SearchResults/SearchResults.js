@@ -12,6 +12,7 @@ import { providers } from '../../utils';
 import { SearchContext } from '../SearchProvider/SearchProvider';
 import SearchFilters from '../SearchFilters';
 import SearchResult from '../../components/SearchResult';
+import SortBySelect from '../../components/SortBySelect/SortBySelect';
 import styles from './SearchResults.styles';
 
 class SearchResults extends Component {
@@ -154,12 +155,15 @@ class SearchResults extends Component {
               <SearchFilters data={searchResults} />
             </Grid>
             <Grid xs={12} md={9} className={classes.resultsContainer} item>
-              <Typography
-                variant="subtitle1"
-                className={classes.resultsTotal}
-              >
-                {t('results', { count: total })}
-              </Typography>
+              <div className={classes.resultsTotalHeader}>
+                <Typography
+                  variant="subtitle1"
+                  className={classes.resultsTotal}
+                >
+                  {t('results', { count: total })}
+                </Typography>
+                <SortBySelect />
+              </div>
               {this.renderTypeResults('Person', selectedCategory, setCategory, searchResults, counts)}
               {this.renderTypeResults('MusicComposition', selectedCategory, setCategory, searchResults, counts)}
               {this.renderTypeResults('DigitalDocument', selectedCategory, setCategory, searchResults, counts)}

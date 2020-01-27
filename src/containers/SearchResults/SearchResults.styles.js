@@ -24,6 +24,11 @@ export default ({ breakpoints, spacing, palette, typography }) => ({
   category: {
     fontWeight: 'bold',
   },
+  resultsTotalHeader: {
+    display       : 'flex',
+    alignItems    : 'center',
+    justifyContent: 'space-between',
+  },
   resultsHeader: {
     marginBottom: spacing(2.25),
   },

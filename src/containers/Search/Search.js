@@ -22,11 +22,12 @@ export class Search extends Component {
 
     return (
       <SearchContext.Consumer>
-        {({ searchPhrase, searchTags, categories, filter }) => (
+        {({ searchPhrase, searchTags, categories, filter, sortings }) => (
           <SearchResults
             searchPhrase={this.mergeSearchPhraseAndTags(searchPhrase, searchTags)}
             categories={categories}
             filter={filter}
+            sortings={sortings}
             onResultClick={onResultClick}
           />
         )}
